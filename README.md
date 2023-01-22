@@ -13,7 +13,7 @@
 - If you want to watch your ts file everytime when changes happen, run `tsc app.ts -w`.
 
 ### Step 3
-- Create a typescript config file by running `--tsc init`. This will generate a tsconfig.json file with commented options.
+- Create a typescript config file by running `tsc --init`. This will generate a tsconfig.json file with commented options.
 - Make the `"target"` to `es2016`
 - Uncomment `"outDir": "./"` and `"rootDir": "./"`.
 - Add `./dist` to outDir. `"outDir": "./dist"`: It will add the compiled js files into dist folder.
