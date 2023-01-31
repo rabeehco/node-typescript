@@ -31,8 +31,8 @@
 
 ### Step 6
 Add Below as Scripts in package.json file
- - `"start":"node dist/app.js"`
- - `"dev": "nodemon src/app.ts"`
+ - `"start":"node dist/app.js",`
+ - `"dev": "nodemon src/app.ts",`
  - `"build": "tsc -p ."`
 
 
