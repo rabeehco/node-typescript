@@ -4,13 +4,13 @@
 
 ### Step 1
 - Run `sudo npm i -g typescript` to install typescript globally.
-- Check typescripe version by running `tsc --version` to make sure you installed it correctly.
+- Check typescript version by running `tsc --version` to make sure you installed it correctly.
 
 ### Step 2
 - Create a file called app.ts `touch app.ts`
 - Write typescript code in it.
-- To compile it run `tsc app.ts`. It will generate actual Javascript file for app.js.
-- If you want to watch your ts file everytime when changes happen, run `tsc app.ts -w`.
+- To compile it run `tsc app.ts`. It will generate an actual Javascript file for app.js.
+- If you want to watch your ts file every time when changes happen, run `tsc app.ts -w`.
 
 ### Step 3
 - Create a typescript config file by running `tsc --init`. This will generate a tsconfig.json file with commented options.
@@ -22,7 +22,7 @@
 
 ### Step 4
 - Now move the `app.ts` file into `src` folder.
-- Simple run `tsc` in project directory to automatically create `dist` folder and add the compiled version of `app.ts`.
+- Simple run `tsc` in the project directory to automatically create a `dist` folder and add the compiled version of `app.ts`.
 
 ### Step 5
 - Add package.json file by running `npm init -y`.
@@ -32,7 +32,8 @@
 ### Step 6
 Add Below as Scripts in package.json file
  - `"start":"node dist/app.js",`
- - `"dev": "nodemon src/app.ts",`
+ - `"dev": "nodemon --exec ts-node src/app.ts",`
  - `"build": "tsc -p ."`
 
-
+### Step 7
+Run `npm run dev` to start development, after you finish your work, you can run `npm run build` to compile the files inside the `src` folder into javascript files (create a dist folder to store them). In short, the `src` folder contains the `typescript` files and the `dist` folder contains the compiled (into javascript) version of typescript files.
