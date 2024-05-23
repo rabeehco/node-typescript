@@ -35,5 +35,5 @@ Add Below as Scripts in package.json file
  - `"dev": "nodemon --exec ts-node src/app.ts",`
  - `"build": "tsc -p ."`
 
-### Step 7
+### Finally
 Run `npm run dev` to start development, after you finish your work, you can run `npm run build` to compile the files inside the `src` folder into javascript files (create a dist folder to store them). In short, the `src` folder contains the `typescript` files and the `dist` folder contains the compiled (into javascript) version of typescript files.
